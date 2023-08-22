@@ -3,7 +3,6 @@ Feature:  Logout from the PrepMajor website
   Background: user should login successfully
     Given  I am on the PrepMajor website
     And    I click on login
-   When   I view the login form page
     When   I enter my username and password
     And    I click on login button
     Then   I should login successfully
