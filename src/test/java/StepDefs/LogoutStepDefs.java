@@ -22,7 +22,7 @@ public class LogoutStepDefs {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
          
-        //  driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+          //driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
     }
     @Given("I am on the PrepMajor website")
     public void iAmOnThePrepMajorWebsite() {
@@ -33,10 +33,6 @@ public class LogoutStepDefs {
     public void iClickOnLogin() {
         driver.findElement(By.xpath("//*[@id=\"header\"]/div/div[2]/div/div/div/div[3]/a[1]/span")).click();
     }
-
-    // @When("I view the login form page")
-    //public void iViewTheLoginFormPage() {
-    //}
     @When("I enter my username and password")
     public void iEnterMyUsernameAndPassword() {
         driver.findElement(By.xpath("//*[@id=\"stm-lms-login-modal\"]/div[2]/div[1]/input")).sendKeys("georgespofou@yahoo.fr");
